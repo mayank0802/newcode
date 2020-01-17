@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Nofdstice!</title>
+    <style>
+      textarea::placeholder{
+        text-align: center;
+      }
+            h1 {
+      text-align:center;
+      fone-size:18;
+      }
+}        
+    </style>
+  </head>
+  <body>
+    <h1>Enter the notice</h1>
+    <form action = "/notice/" method="post">{% csrf_token %}
+    <textarea rows= 15 cols= 187  name = "notice"></textarea>
+    <button  style="margin-left: 600px"type="submit" class="btn btn-primary btn-lg">Large button</button>
+  </form>
+ </body>
+</html>
